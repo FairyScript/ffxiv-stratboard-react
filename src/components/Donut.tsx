@@ -5,7 +5,7 @@ import type { IconProps } from '../@types/iconProps'
 
 const Donut: React.FC<IconProps> = ({ data }) => {
   const scale = (data.size ?? 100) / 100
-  const opacity = (100 - (data.transparency ?? 0)) / 100
+  const opacity = data.hidden ? 0 : (100 - (data.transparency ?? 0)) / 100
   const outerRadius = 512
   const innerRadius = (data.donutRadius ?? 0) * 2
   const arcAngle = data.arcAngle ?? 360
@@ -120,12 +120,11 @@ const Donut: React.FC<IconProps> = ({ data }) => {
       opacity={opacity}
       offsetX={offsetX}
       offsetY={offsetY}
+      rotationDeg={data.angle ?? 0}
     >
       <Shape
         sceneFunc={sceneFunc}
         fill="orange"
-        stroke="darkorange"
-        strokeWidth={2}
       />
     </Group>
   )

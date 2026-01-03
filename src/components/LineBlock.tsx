@@ -6,7 +6,7 @@ const LineBlock: React.FC<IconProps> = ({ data }) => {
   const startY = data.y * 2
   const endX = (data.endX ?? data.x) * 2
   const endY = (data.endY ?? data.y) * 2
-  const opacity = (100 - (data.transparency ?? 0)) / 100
+  const opacity = data.hidden ? 0 : (100 - (data.transparency ?? 0)) / 100
   return (
     <Group>
       <Line

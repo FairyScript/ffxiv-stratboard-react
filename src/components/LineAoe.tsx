@@ -5,7 +5,7 @@ const LineAoe: React.FC<IconProps> = ({ data }) => {
   const width = data.width ?? 128
   const height = data.height ?? 128
   const scale = (data.size ?? 100) / 100
-  const opacity = (100 - (data.transparency ?? 0)) / 100
+  const opacity = data.hidden ? 0 : (100 - (data.transparency ?? 0)) / 100
 
   return (
     <Rect

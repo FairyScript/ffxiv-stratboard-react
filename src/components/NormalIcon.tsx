@@ -14,7 +14,7 @@ const NormalIcon: React.FC<IconProps> = ({ data }) => {
   const [img] = useImage(getIconUrl(config.src))
 
   const scale = (data.size ?? 100) / 100
-  const opacity = (100 - (data.transparency ?? 0)) / 100
+  const opacity = data.hidden ? 0 : (100 - (data.transparency ?? 0)) / 100
 
   return (
     <Image
