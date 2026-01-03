@@ -113,8 +113,10 @@ const Donut: React.FC<IconProps> = ({ data }) => {
     <Group
       x={data.x * 2}
       y={data.y * 2 - 10}
-      scaleX={scale}
-      scaleY={scale}
+      scale={{
+        x: scale * (data.horizontalFlip ? -1 : 1),
+        y: scale * (data.verticalFlip ? -1 : 1),
+      }}
       opacity={opacity}
       offsetX={offsetX}
       offsetY={offsetY}

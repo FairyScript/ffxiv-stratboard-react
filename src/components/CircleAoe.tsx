@@ -95,7 +95,10 @@ const CircleAoe: React.FC<IconProps> = ({ data }) => {
       x={x}
       y={y}
       rotationDeg={data.angle ?? 0}
-      scale={{ x: scale, y: scale }}
+      scale={{
+        x: scale * (data.horizontalFlip ? -1 : 1),
+        y: scale * (data.verticalFlip ? -1 : 1),
+      }}
       opacity={opacity}
       clipFunc={clipFunc}
       offsetX={offsetX}

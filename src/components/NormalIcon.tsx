@@ -10,8 +10,7 @@ const NormalIcon: React.FC<IconProps> = ({ data }) => {
     console.warn(`No icon config found for type: ${data.type}`)
     return null
   }
-  console.log(config);
-  
+
   const [img] = useImage(getIconUrl(config.src))
 
   const scale = (data.size ?? 100) / 100
@@ -27,8 +26,8 @@ const NormalIcon: React.FC<IconProps> = ({ data }) => {
       x={data.x * 2}
       y={data.y * 2}
       scale={{
-        x: scale,
-        y: scale,
+        x: scale * (data.horizontalFlip ? -1 : 1),
+        y: scale * (data.verticalFlip ? -1 : 1),
       }}
       crop={config.crop}
       rotationDeg={data.angle ?? 0}
