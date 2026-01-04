@@ -1,0 +1,7 @@
+{
+  "src/**/*.{ts,tsx,js,jsx}": [
+    "bunx biome check --fix",
+    "bunx prettier --write"
+  ],
+  "*.md": "bunx prettier --write"
+}
