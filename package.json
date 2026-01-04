@@ -18,7 +18,7 @@
     "react-konva": "^19.2.1",
     "tailwindcss": "^4.1.18",
     "use-image": "^1.1.4",
-    "xiv-strat-board": "^0.2.2"
+    "xiv-strat-board": "^0.2.3"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.11",

@@ -382,7 +382,7 @@
 
     "wrap-ansi": ["wrap-ansi@9.0.2", "https://mirrors.cloud.tencent.com/npm/wrap-ansi/-/wrap-ansi-9.0.2.tgz", { "dependencies": { "ansi-styles": "^6.2.1", "string-width": "^7.0.0", "strip-ansi": "^7.1.0" } }, "sha512-42AtmgqjV+X1VpdOfyTGOYRi0/zsoLqtXQckTmqTeybT+BDIbM/Guxo7x3pE2vtpr1ok6xRqM9OpBe+Jyoqyww=="],
 
-    "xiv-strat-board": ["xiv-strat-board@0.2.2", "", { "dependencies": { "pako": "^2.1.0" } }, "sha512-zVXGw23m5OW0SbsO6Wiwb/o7ofUxf+/AG8qVF9kY4zxLnqZ5Ep6LyNhnWjinlNKsmhhS/aaTmyY9itVvL6imvA=="],
+    "xiv-strat-board": ["xiv-strat-board@0.2.3", "https://mirrors.cloud.tencent.com/npm/xiv-strat-board/-/xiv-strat-board-0.2.3.tgz", { "dependencies": { "pako": "^2.1.0" } }, "sha512-2xrkTvrzehN9104KP6qlYqzP2iFjyEvqh+4F0lm9DpPW2UKc7iiJgnxQz3fW7yipB54nJJSZ2bnnfVf66jg8EA=="],
 
     "yallist": ["yallist@3.1.1", "", {}, "sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g=="],
 
