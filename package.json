@@ -2,6 +2,8 @@
   "name": "ff14-stratboard-react",
   "private": true,
   "version": "0.0.0",
+  "license": "MIT",
+  "author": "FairyScript",
   "type": "module",
   "scripts": {
     "dev": "vite",
