@@ -120,7 +120,7 @@ const Donut: React.FC<IconProps> = ({ data }) => {
       opacity={opacity}
       offsetX={offsetX}
       offsetY={offsetY}
-      rotationDeg={data.angle ?? 0}
+      rotation={data.angle ?? 0}
     >
       <Shape
         sceneFunc={sceneFunc}

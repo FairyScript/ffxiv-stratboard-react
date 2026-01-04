@@ -18,7 +18,7 @@ const LineAoe: React.FC<IconProps> = ({ data }) => {
       fill={data.color ?? '#ff8000'}
       scaleX={scale}
       scaleY={scale}
-      rotationDeg={data.angle ?? 0}
+      rotation={data.angle ?? 0}
       opacity={opacity}
     />
   )

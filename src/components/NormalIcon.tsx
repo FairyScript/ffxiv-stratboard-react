@@ -30,7 +30,7 @@ const NormalIcon: React.FC<IconProps> = ({ data }) => {
         y: scale * (data.verticalFlip ? -1 : 1),
       }}
       crop={config.crop}
-      rotationDeg={data.angle ?? 0}
+      rotation={data.angle ?? 0}
       opacity={opacity}
     />
   )

@@ -94,7 +94,7 @@ const CircleAoe: React.FC<IconProps> = ({ data }) => {
     <Group
       x={x}
       y={y}
-      rotationDeg={data.angle ?? 0}
+      rotation={data.angle ?? 0}
       scale={{
         x: scale * (data.horizontalFlip ? -1 : 1),
         y: scale * (data.verticalFlip ? -1 : 1),
