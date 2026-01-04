@@ -1,8 +1,8 @@
-import { decode } from 'xiv-strat-board'
+import { useLayoutEffect, useState } from 'react'
 import { Layer, Stage } from 'react-konva'
+import { decode } from 'xiv-strat-board'
 import Board from './components/Board'
 import Icon from './components/Icon'
-import { useLayoutEffect, useState } from 'react'
 
 const sceneWidth = 1024
 const sceneHeight = 768
@@ -52,6 +52,7 @@ function App() {
       <Layer>
         <Board type={board.boardBackground ?? 'none'} />
         {board.objects.reverse().map((obj, index) => (
+          // biome-ignore lint/suspicious/noArrayIndexKey: there is no other key available
           <Icon key={index} data={obj} />
         ))}
       </Layer>

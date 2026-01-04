@@ -1,11 +1,11 @@
 import type { IconType } from 'xiv-strat-board'
-import NormalIcon from './NormalIcon'
 import type { IconProps } from '../@types/iconProps'
-import TextBlock from './TextBlock'
-import LineAoe from './LineAoe'
 import CircleAoe from './CircleAoe'
 import Donut from './Donut'
+import LineAoe from './LineAoe'
 import LineBlock from './LineBlock'
+import NormalIcon from './NormalIcon'
+import TextBlock from './TextBlock'
 
 const Icon: React.FC<IconProps> = ({ data }) => {
   switch (data.type as IconType) {
