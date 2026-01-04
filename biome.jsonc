@@ -1,0 +1,45 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.3.11/schema.json",
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  },
+  "files": {
+    "includes": [
+      "src/**/*",
+      "!**/routeTree.gen.ts"
+    ]
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "formatter": {
+    "enabled": false
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "useKeyWithClickEvents": "off",
+        "useButtonType": "off",
+        "noSvgWithoutTitle": "off",
+        "noStaticElementInteractions": "off"
+      },
+      "suspicious": {
+        "noConfusingVoidType": "off"
+      },
+      "style": {
+        "useImportType": "info",
+        "noUnusedTemplateLiteral": "info",
+        "noNonNullAssertion": "off"
+      }
+    }
+  },
+  "overrides": []
+}

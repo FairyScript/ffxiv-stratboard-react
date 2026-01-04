@@ -1,8 +1,8 @@
+import { Image } from 'react-konva'
 import useImage from 'use-image'
+import type { IconProps } from '../@types/iconProps'
 import { getIconConfig } from '../utils/iconMap'
 import { getIconUrl } from '../utils/staticImage'
-import { Image } from 'react-konva'
-import type { IconProps } from '../@types/iconProps'
 
 const NormalIcon: React.FC<IconProps> = ({ data }) => {
   const config = getIconConfig(data)
@@ -11,7 +11,9 @@ const NormalIcon: React.FC<IconProps> = ({ data }) => {
     return null
   }
 
-  const [img] = useImage(getIconUrl(config.src))
+  const iconUrl = getIconUrl(config.src)
+  // biome-ignore lint/correctness/useHookAtTopLevel: 是个正常的hook使用
+  const [img] = useImage(iconUrl)
 
   const scale = (data.size ?? 100) / 100
   const opacity = data.hidden ? 0 : (100 - (data.transparency ?? 0)) / 100
